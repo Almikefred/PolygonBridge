@@ -38,7 +38,7 @@ npm install
 First compile the contract using `npx hardhat compile` then deploy the contract onto
 Goerli Ethereum testnet using the following command:
 ```shell
-npx hardhat run --network goerli scripts/nft/deploy.js
+npx hardhat run --network sepolia scripts/nft/deploy.js
 ```
 
 Then, if everything is set up right, you get a console response like this:
@@ -62,7 +62,7 @@ Successfully minted: <number> MetaToken NFTs to <WALLET-ADDRESS>
 Pass in the Polygon Mumbai bridged address of your contract to `BRIDGE-ADDRESS` in
 `.env`, then run the `approveTransfer.js` script with hardhat:
 ```shell
-npx hardhat run --network goerli scripts/nft/approveTransfer.js
+npx hardhat run --network sepolia scripts/nft/approveTransfer.js
 ```
 The response should look like this:
 ```
@@ -73,5 +73,4 @@ NFT deposited on Polygon Mumbai
 
 ## Author
 
-David Dada 
-[@DadaAyo5](https://twitter.com/DadaAyo5)
+Michael Alfred
